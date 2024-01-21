@@ -8,7 +8,7 @@ const Board = ({ squares, onClick }) => {
   };
 
   return (
-    <div>
+    <div className='board'>
       <div className='board-row'>
         {renderSquare(0)}
         {renderSquare(1)}

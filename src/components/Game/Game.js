@@ -49,10 +49,12 @@ const Game = () => {
 
     return (
         <div>
-            <div>{status}</div>
+            <div className='status-bar'>
+            <p>{status}</p>
+            </div>
             <Board squares={squares} onClick={(i) => handleClick(i)} />
             
-            <button onClick={() => setSquares(Array(9).fill(null))}>Restart Game</button>
+            <button className='reset' onClick={() => setSquares(Array(9).fill(null))}>Restart Game</button>
         </div>
     );
 };
