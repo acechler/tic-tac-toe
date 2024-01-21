@@ -1,6 +1,6 @@
 // src/Game.js
 import React, { useState } from 'react';
-import Board from './Board';
+import Board from '../Board/Board';
 
 const Game = () => {
     const [squares, setSquares] = useState(Array(9).fill(null));
